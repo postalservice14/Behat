@@ -259,6 +259,12 @@
             <argument>Generates a report similar to Ant+JUnit.</argument>
             <tag name="behat.formatter.dispatcher" />
         </service>
+        <service id="behat.formatter.dispatcher.junit.combined" class="%behat.formatter.dispatcher.class%">
+            <argument>Behat\Behat\Formatter\JUnitCombinedFormatter</argument>
+            <argument>junit-combined</argument>
+            <argument>Generates a combined report similar to Ant+JUnit.</argument>
+            <tag name="behat.formatter.dispatcher" />
+        </service>
         <service id="behat.formatter.dispatcher.failed" class="%behat.formatter.dispatcher.class%">
             <argument>Behat\Behat\Formatter\FailedScenariosFormatter</argument>
             <argument>failed</argument>
